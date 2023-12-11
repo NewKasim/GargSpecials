@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    
+</head>
+
+<body>
+<a href="/">back</a>
+
+    <form action="#" th:action="@{/create}" th:object="${user}" method="post">
+        <label for="inputData">Enter to the name</label>
+        <input type="text" id="inputData" th:field="*{name}" />
+        <button type="submit">Submit</button>
+    </form>
+
+
+</body>
+
+</html>
